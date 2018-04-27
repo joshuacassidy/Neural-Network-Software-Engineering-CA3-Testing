@@ -41,6 +41,8 @@ public class EnvironmentVariablesTest {
         assertEquals(10, env.getLAYER_TRAINING_ITERATIONS());
     }
 
+
+
     @Test
     public void sigmoid() throws Exception {
         for (double i = -1, index = 0; i <= 1; i+=0.25, index++) {
@@ -58,6 +60,16 @@ public class EnvironmentVariablesTest {
     @Test
     public void getInstance() throws Exception {
         assertEquals(env.getInstance(), env);
+    }
+
+    @Test
+    public void getTrainingData() throws Exception {
+        assertArrayEquals(new double[][] {{0,0}, {0,1}, {1,0}, {1,1}}, env.getTrainingData());
+    }
+
+    @Test
+    public void getTrainingResults() throws Exception {
+        assertArrayEquals(new double[] {0, 1, 1, 1}, env.getTrainingResults(), 0);
     }
 
 }
