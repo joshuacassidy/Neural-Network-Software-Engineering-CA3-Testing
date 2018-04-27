@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1bf08bc-05ba-4b62-9ac9-973f1b28a002" name="Default" comment="" />
+    <list default="true" id="f1bf08bc-05ba-4b62-9ac9-973f1b28a002" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/.css/coverage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/.img/arrowDown.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/.img/arrowUp.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/Agent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/EnvironmentVariables.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/InadequatelyTrainedNeuralNetworkException.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/InvalidInputForNeuralNetworkException.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/Layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/Main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/NeuralNetwork.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_BLOCK.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_CLASS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_CLASS_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_LINE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_LINE_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_METHOD.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_METHOD_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_NAME_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_BLOCK.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_CLASS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_CLASS_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_LINE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_LINE_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_METHOD.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_METHOD_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_NAME_DESC.html" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
