@@ -13,19 +13,9 @@ public class EnvironmentVariables {
     private int NETWORK_TRAINING_ITERATIONS = 100000;
     private final int LAYER_TRAINING_ITERATIONS = 10;
 
-    private double[][] trainingData = new double[][] {
-            new double[] {0, 0},
-            new double[] {0, 1},
-            new double[] {1, 0},
-            new double[] {1, 1}
-    };
+    private double[][] trainingData = new double[][] {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
 
-    private double[] trainingResults = new double[] {
-            0,
-            1,
-            1,
-            1
-    };
+    private double[] trainingResults = new double[] {0, 1, 1, 1};
 
     public double getMOMENTUM() {
         return MOMENTUM;
