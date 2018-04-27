@@ -3,6 +3,9 @@ package com.josh.SoftwareEngineeringCA3;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Created by Josh on 20/04/2018.
+ */
 public class MainTest {
 
     private String[] args;

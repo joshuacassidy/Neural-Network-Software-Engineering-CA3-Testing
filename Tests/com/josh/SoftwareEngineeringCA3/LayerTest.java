@@ -8,6 +8,9 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
+/**
+ * Created by Josh on 20/04/2018.
+ */
 public class LayerTest {
 
     private class MockLayer extends Layer {

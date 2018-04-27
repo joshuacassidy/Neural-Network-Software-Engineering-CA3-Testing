@@ -6,6 +6,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Created by Josh on 23/04/2018.
+ */
 public class NeuralNetworkTest {
 
     private NeuralNetwork neuralNetwork;
@@ -49,8 +52,6 @@ public class NeuralNetworkTest {
 
     @Test
     public void calculateError() throws Exception {
-        // Structure of calculateErrorValues is below
-        // calculatedOutput, targetOutput, error, result
         double[][][] calculateErrorValues = {
                 {{0.5}, {1}, {0.5}, {0.5}},
                 {{0}, {1}, {1}, {1.0}},
