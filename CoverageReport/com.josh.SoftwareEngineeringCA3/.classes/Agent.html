@@ -1,0 +1,146 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Agent</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.josh.SoftwareEngineeringCA3</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Agent (com.josh.SoftwareEngineeringCA3)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Agent</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (9/ 9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (23/ 23)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.josh.SoftwareEngineeringCA3;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;/**
+<i>4</i>&nbsp; * Created by Josh on 26/04/2018.
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;public class Agent {
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;    private NeuralNetwork neuralNetwork;
+<i>9</i>&nbsp;    private EnvironmentVariables env;
+<i>10</i>&nbsp;
+<b class="fc"><i>11</i>&nbsp;    public Agent() {</b>
+<b class="fc"><i>12</i>&nbsp;        neuralNetwork = new NeuralNetwork(2, 4, 1);</b>
+<b class="fc"><i>13</i>&nbsp;        env = EnvironmentVariables.getInstance();</b>
+<b class="fc"><i>14</i>&nbsp;    }</b>
+<i>15</i>&nbsp;
+<i>16</i>&nbsp;    public void learn() {
+<b class="fc"><i>17</i>&nbsp;        for (int i = 0; i &lt; env.getNETWORK_TRAINING_ITERATIONS(); i++) {</b>
+<b class="fc"><i>18</i>&nbsp;            for (int j = 0; j &lt; env.getTrainingResults().length; j++) {</b>
+<b class="fc"><i>19</i>&nbsp;                neuralNetwork.train(env.getTrainingData()[j], env.getTrainingResults()[j]);</b>
+<i>20</i>&nbsp;            }
+<i>21</i>&nbsp;        }
+<b class="fc"><i>22</i>&nbsp;    }</b>
+<i>23</i>&nbsp;
+<i>24</i>&nbsp;    public int makePrediction(double[] inputData) {
+<b class="fc"><i>25</i>&nbsp;        if ((inputData.length &gt; 2 || inputData.length &lt; 2) || (inputData[0] != 1 &amp;&amp; inputData[0] != 0) || (inputData[1] != 1 &amp;&amp; inputData[1] != 0)) {</b>
+<b class="fc"><i>26</i>&nbsp;            throw new InvalidInputForNeuralNetworkException(&quot;Invalid Input has been entered for the neural network, the neural network only supports logical operations on two binary numbers (1,0)&quot;);</b>
+<i>27</i>&nbsp;        } else {
+<b class="fc"><i>28</i>&nbsp;            System.out.print(&quot;The result of: &quot; + (int) inputData[0] + &quot; OR &quot; + (int) inputData[1] + &quot; = &quot;);</b>
+<b class="fc"><i>29</i>&nbsp;            return (int) verifyPrediction(inputData, predict(inputData));</b>
+<i>30</i>&nbsp;        }
+<i>31</i>&nbsp;    }
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;    public double[] predict(double[] inputData) {
+<b class="fc"><i>34</i>&nbsp;        return neuralNetwork.feedForward(inputData);</b>
+<i>35</i>&nbsp;    }
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;    public double verifyPrediction(double[] inputData, double[] result) {
+<b class="fc"><i>38</i>&nbsp;        int index = searchForInputData(inputData, 0);</b>
+<b class="fc"><i>39</i>&nbsp;        result[0] = (int) (Math.round(result[0]));</b>
+<b class="fc"><i>40</i>&nbsp;        if (env.getTrainingResults()[index] == result[0]) {</b>
+<b class="fc"><i>41</i>&nbsp;            return result[0];</b>
+<i>42</i>&nbsp;        } else {
+<b class="fc"><i>43</i>&nbsp;            throw new InadequatelyTrainedNeuralNetworkException(&quot;There was an issue when training the neural network this could be due to the network not being trained for long enough, oversizing or under sizing&quot;);</b>
+<i>44</i>&nbsp;        }
+<i>45</i>&nbsp;    }
+<i>46</i>&nbsp;
+<i>47</i>&nbsp;    public int searchForInputData(double[] inputData, int index) {
+<b class="fc"><i>48</i>&nbsp;        return (inputData[0] == env.getTrainingData()[index][0]) &amp;&amp; (inputData[1] == env.getTrainingData()[index][1]) || index &gt; inputData.length ? index : searchForInputData(inputData, index+1);</b>
+<i>49</i>&nbsp;    }
+<i>50</i>&nbsp;
+<i>51</i>&nbsp;    public void setNeuralNetwork(NeuralNetwork neuralNetwork) {
+<b class="fc"><i>52</i>&nbsp;        this.neuralNetwork = neuralNetwork;</b>
+<b class="fc"><i>53</i>&nbsp;    }</b>
+<i>54</i>&nbsp;
+<i>55</i>&nbsp;    public NeuralNetwork getNeuralNetwork() {
+<b class="fc"><i>56</i>&nbsp;        return neuralNetwork;</b>
+<i>57</i>&nbsp;    }
+<i>58</i>&nbsp;
+<i>59</i>&nbsp;    public EnvironmentVariables getEnv() {
+<b class="fc"><i>60</i>&nbsp;        return env;</b>
+<i>61</i>&nbsp;    }
+<i>62</i>&nbsp;
+<i>63</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-04-27 20:17</div>
+</div>
+</body>
+</html>

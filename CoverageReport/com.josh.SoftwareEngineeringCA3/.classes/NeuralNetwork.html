@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: NeuralNetwork</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.josh.SoftwareEngineeringCA3</a> ]
+</div>
+
+<h1>Coverage Summary for Class: NeuralNetwork (com.josh.SoftwareEngineeringCA3)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">NeuralNetwork</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/ 8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (17/ 17)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.josh.SoftwareEngineeringCA3;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;/**
+<i>4</i>&nbsp; * Created by Josh on 08/04/2018.
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;public class NeuralNetwork {
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;    private Layer[] layers;
+<i>9</i>&nbsp;    private EnvironmentVariables env;
+<i>10</i>&nbsp;
+<b class="fc"><i>11</i>&nbsp;    public NeuralNetwork(int noOfInputNeurons, int noOfHiddenNeurons, int noOfOutputNeurons) {</b>
+<b class="fc"><i>12</i>&nbsp;        layers = new Layer[] {</b>
+<i>13</i>&nbsp;                new Layer(noOfInputNeurons, noOfHiddenNeurons), // edges going from input to the hidden layer
+<i>14</i>&nbsp;                new Layer(noOfHiddenNeurons, noOfOutputNeurons) // edges going from hidden layer to output layer
+<i>15</i>&nbsp;        };
+<b class="fc"><i>16</i>&nbsp;        env = EnvironmentVariables.getInstance();</b>
+<b class="fc"><i>17</i>&nbsp;    }</b>
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;    public double[] feedForward(double[] input) {
+<b class="fc"><i>20</i>&nbsp;        return updateInputActivations(0, input);</b>
+<i>21</i>&nbsp;    }
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;    public double[] updateInputActivations(int index, double[] input) {
+<b class="fc"><i>24</i>&nbsp;        return index &lt; layers.length ? updateInputActivations(index+1, layers[index].feedForward(input)) : input;</b>
+<i>25</i>&nbsp;    }
+<i>26</i>&nbsp;
+<i>27</i>&nbsp;    public double[] train(double[] input, double targetOutput) {
+<i>28</i>&nbsp;
+<b class="fc"><i>29</i>&nbsp;        double[] calculatedOutput = feedForward(input);</b>
+<i>30</i>&nbsp;        double[] error;
+<b class="fc"><i>31</i>&nbsp;        error = calculateError(calculatedOutput, targetOutput,  new double[calculatedOutput.length], targetOutput - calculatedOutput[0], 0);</b>
+<i>32</i>&nbsp;
+<b class="fc"><i>33</i>&nbsp;        for (int layerIterations = 0; layerIterations &lt; env.getLAYER_TRAINING_ITERATIONS(); layerIterations++) {</b>
+<b class="fc"><i>34</i>&nbsp;            for (int i = (layers.length-1); i &gt; 0; i--) {</b>
+<b class="fc"><i>35</i>&nbsp;                layers[i].train(error);</b>
+<i>36</i>&nbsp;            }
+<i>37</i>&nbsp;        }
+<i>38</i>&nbsp;
+<b class="fc"><i>39</i>&nbsp;        return error;</b>
+<i>40</i>&nbsp;    }
+<i>41</i>&nbsp;
+<i>42</i>&nbsp;    public double[] calculateError(double[] calculatedOutput, double targetOutput, double[] error, double errorUpdate, int index) {
+<b class="fc"><i>43</i>&nbsp;        return index &lt; error.length ? calculateError(calculatedOutput, targetOutput, error, error[index] = targetOutput - calculatedOutput[index], index+1) : error;</b>
+<i>44</i>&nbsp;    }
+<i>45</i>&nbsp;
+<i>46</i>&nbsp;    public Layer[] getLayers() {
+<b class="fc"><i>47</i>&nbsp;        return layers;</b>
+<i>48</i>&nbsp;    }
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;    public void setLayers(Layer[] layers) {
+<b class="fc"><i>51</i>&nbsp;        this.layers = layers;</b>
+<b class="fc"><i>52</i>&nbsp;    }</b>
+<i>53</i>&nbsp;
+<i>54</i>&nbsp;    public EnvironmentVariables getEnv() {
+<b class="fc"><i>55</i>&nbsp;        return env;</b>
+<i>56</i>&nbsp;    }
+<i>57</i>&nbsp;
+<i>58</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-04-27 20:17</div>
+</div>
+</body>
+</html>
