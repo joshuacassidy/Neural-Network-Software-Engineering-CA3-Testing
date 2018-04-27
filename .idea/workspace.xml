@@ -2,36 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1bf08bc-05ba-4b62-9ac9-973f1b28a002" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/.css/coverage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/.img/arrowDown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/.img/arrowUp.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/Agent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/EnvironmentVariables.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/InadequatelyTrainedNeuralNetworkException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/InvalidInputForNeuralNetworkException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/Layer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/Main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/.classes/NeuralNetwork.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_BLOCK.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_CLASS.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_CLASS_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_LINE.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_LINE_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_METHOD.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_METHOD_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/com.josh.SoftwareEngineeringCA3/index_SORT_BY_NAME_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_BLOCK.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_CLASS.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_CLASS_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_LINE.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_LINE_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_METHOD.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_METHOD_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CoverageReport/index_SORT_BY_NAME_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.css/coverage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.img/arrowDown.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.img/arrowUp.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/.classes/Agent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/.classes/EnvironmentVariables.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/.classes/InadequatelyTrainedNeuralNetworkException.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/.classes/InvalidInputForNeuralNetworkException.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/.classes/Layer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/.classes/Main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/.classes/NeuralNetwork.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_BLOCK.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_CLASS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_CLASS_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_LINE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_LINE_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_METHOD.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_METHOD_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/com.josh.SoftwareEngineeringCA3/index_SORT_BY_NAME_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_BLOCK.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_CLASS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_CLASS_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_LINE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_LINE_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_METHOD.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_METHOD_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index_SORT_BY_NAME_DESC.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,7 +154,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="129" />
+    <option name="x" value="130" />
     <option name="y" value="23" />
     <option name="width" value="1404" />
     <option name="height" value="940" />
@@ -628,7 +628,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="129" y="23" width="1404" height="940" extended-state="0" />
+    <frame x="130" y="23" width="1404" height="940" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
